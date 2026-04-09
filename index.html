@@ -1,0 +1,566 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta
+            name="description"
+            content="Portfolio of Prabhat Kumar Gupta, Frontend Developer and MERN Stack Learner"
+        />
+        <title>Prabhat Kumar Gupta | Web Developer</title>
+
+        <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@400;600;800&family=JetBrains+Mono:wght@300;400;500;600;700&display=swap"
+            rel="stylesheet"
+        />
+
+        <!-- Font Awesome -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        />
+
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <!-- Cursor -->
+        <div class="cursor" id="cursor"></div>
+        <div class="cursor-follower" id="cursor-follower"></div>
+
+        <!-- Navigation -->
+        <header class="navbar">
+            <div class="container nav-container">
+                <a href="#home" class="logo">PKG<span>.</span></a>
+                <nav>
+                    <ul class="nav-links">
+                        <li>
+                            <a href="#home" class="nav-link active">Home</a>
+                        </li>
+                        <li><a href="#about" class="nav-link">About</a></li>
+                        <li><a href="#skills" class="nav-link">Skills</a></li>
+                        <li>
+                            <a href="#projects" class="nav-link">Projects</a>
+                        </li>
+                        <li><a href="#contact" class="nav-link">Contact</a></li>
+                    </ul>
+                </nav>
+                <div class="nav-actions">
+                    <button
+                        class="theme-toggle"
+                        id="theme-toggle"
+                        aria-label="Toggle theme"
+                    >
+                        <i class="fas fa-moon"></i>
+                    </button>
+                    <div class="hamburger">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <!-- Hero Section -->
+            <section id="home" class="hero section">
+                <div class="container hero-container">
+                    <div class="hero-content reveal-left">
+                        <p class="greeting">Hi, I'm</p>
+                        <h1 class="name">
+                            <span class="name">Prabhat Kumar Gupta</span>
+                        </h1>
+                        <h2 class="title" id="typing-text">
+                            Frontend Developer
+                        </h2>
+                        <p class="hero-bio">
+                            A web developer passionate about building responsive
+                            and user-friendly web applications.
+                        </p>
+                        <div class="hero-cta">
+                            <a href="#projects" class="btn btn-primary"
+                                >View My Work</a
+                            >
+                            <a href="#contact" class="btn btn-secondary"
+                                >Contact Me</a
+                            >
+                        </div>
+                        <div class="social-links">
+                            <a
+                                href="https://github.com/prabhatkumargupta00"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                aria-label="GitHub"
+                                ><i class="fab fa-github"></i
+                            ></a>
+                            <a
+                                href="https://www.linkedin.com/in/prabhat-kumar-dev"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                aria-label="LinkedIn"
+                                ><i class="fab fa-linkedin-in"></i
+                            ></a>
+                            <a
+                                href="mailto:pkumargupta9162@gmail.com"
+                                aria-label="Email"
+                                ><i class="fas fa-envelope"></i
+                            ></a>
+                        </div>
+                    </div>
+                    <div class="hero-image reveal-right">
+                        <!-- Using a dynamic css glowing avatar placeholder -->
+                        <div class="avatar-container">
+                            <div class="avatar">
+                                <i class="fas fa-laptop-code"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Scroll Indicator -->
+                <div class="scroll-down">
+                    <a href="#about"><i class="fas fa-chevron-down"></i></a>
+                </div>
+            </section>
+
+            <!-- About Section -->
+            <section id="about" class="about section">
+                <div class="container">
+                    <div class="section-title reveal-up">
+                        <h2>01. <span>About Me</span></h2>
+                    </div>
+                    <div class="about-grid">
+                        <div class="about-text reveal-left">
+                            <p class="about-lead">
+                                I'm Prabhat Kumar Gupta — a web developer and
+                                computer science student from Bhopal.
+                            </p>
+                            <p>
+                                I am a web developer who loves building simple,
+                                user-friendly websites. I focus on solving real,
+                                practical problems and designing clear
+                                experiences that make everyday tasks easier and
+                                more enjoyable for everyone who visits.
+                            </p>
+                            <p>
+                                <strong>Goal:</strong> Work on real projects,
+                                keep learning, and write clean, helpful code
+                                with a great team.
+                            </p>
+
+                            <div class="personal-info">
+                                <div class="info-item">
+                                    <span class="info-label">Location:</span>
+                                    Bhopal, India
+                                </div>
+                                <div class="info-item">
+                                    <span class="info-label">Languages:</span>
+                                    English, Hindi
+                                </div>
+                                <div class="info-item">
+                                    <span class="info-label">Email:</span>
+                                    pkumargupta9162@gmail.com
+                                </div>
+                            </div>
+                        </div>
+                        <div class="about-education reveal-right">
+                            <h3>Education</h3>
+                            <div class="timeline">
+                                <div class="timeline-item">
+                                    <div class="timeline-dot"></div>
+                                    <div class="timeline-content">
+                                        <h4 class="timeline-title">
+                                            Graduation (Computer Science)
+                                        </h4>
+                                        <span class="timeline-date"
+                                            >2022 - Present</span
+                                        >
+                                        <p class="timeline-text">
+                                            SIRT Excellence, Bhopal
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="timeline-item">
+                                    <div class="timeline-dot"></div>
+                                    <div class="timeline-content">
+                                        <h4 class="timeline-title">
+                                            Class XII
+                                        </h4>
+                                        <span class="timeline-date">2022</span>
+                                        <p class="timeline-text">
+                                            BSEB • 63.8%
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="timeline-item">
+                                    <div class="timeline-dot"></div>
+                                    <div class="timeline-content">
+                                        <h4 class="timeline-title">Class X</h4>
+                                        <span class="timeline-date">2020</span>
+                                        <p class="timeline-text">
+                                            BSEB • 72.2%
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Skills Section -->
+            <section id="skills" class="skills section">
+                <div class="container">
+                    <div class="section-title reveal-up">
+                        <h2>02. <span>My Skills</span></h2>
+                    </div>
+                    <div class="skills-container wrapper">
+                        <div
+                            class="skill-category reveal-up"
+                            style="transition-delay: 0.1s"
+                        >
+                            <h3 class="category-title">
+                                <i class="fas fa-layer-group"></i> Frontend
+                            </h3>
+                            <div class="skills-grid">
+                                <div class="skill-card">
+                                    <i class="fab fa-html5"></i> HTML5
+                                </div>
+                                <div class="skill-card">
+                                    <i class="fab fa-css3-alt"></i> CSS3
+                                </div>
+
+                                <div class="skill-card">
+                                    <i class="fab fa-react"></i> React.js
+                                </div>
+                                <div class="skill-card">
+                                    <i class="fas fa-wind"></i> Tailwind CSS
+                                </div>
+                                <div class="skill-card">
+                                    <i class="fas fa-file-code"></i> EJS
+                                </div>
+                            </div>
+                        </div>
+
+                        <div
+                            class="skill-category reveal-up"
+                            style="transition-delay: 0.2s"
+                        >
+                            <h3 class="category-title">
+                                <i class="fas fa-server"></i> Backend & Database
+                            </h3>
+                            <div class="skills-grid">
+                                <div class="skill-card">
+                                    <i class="fab fa-node-js"></i> Node.js
+                                </div>
+                                <div class="skill-card">
+                                    <i class="fas fa-cogs"></i> Express.js
+                                </div>
+                                <div class="skill-card">
+                                    <i class="fas fa-database"></i> MongoDB
+                                </div>
+                                <div class="skill-card">
+                                    <i class="fas fa-table"></i> SQL
+                                </div>
+                            </div>
+                        </div>
+
+                        <div
+                            class="skill-category reveal-up"
+                            style="transition-delay: 0.3s"
+                        >
+                            <h3 class="category-title">
+                                <i class="fas fa-code"></i> Languages & Tools
+                            </h3>
+                            <div class="skills-grid">
+                                <div class="skill-card">
+                                    <i class="fab fa-js"></i> JavaScript
+                                </div>
+                                <div class="skill-card">
+                                    <i class="fas fa-laptop-code"></i> C++
+                                </div>
+                                <div class="skill-card">
+                                    <i class="fab fa-git-alt"></i> Git
+                                </div>
+                                <div class="skill-card">
+                                    <i class="fab fa-github"></i> GitHub
+                                </div>
+                                <div class="skill-card">
+                                    <i class="fas fa-network-wired"></i> REST
+                                    APIs
+                                </div>
+                                <div class="skill-card">
+                                    <i class="fas fa-mobile-alt"></i> Responsive
+                                    Design
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Projects Section -->
+            <section id="projects" class="projects section">
+                <div class="container">
+                    <div class="section-title reveal-up">
+                        <h2>03. <span>Featured Projects</span></h2>
+                    </div>
+                    <div class="projects-grid">
+                        <!-- Project 1 -->
+                        <div class="project-card reveal-up">
+                            <div class="project-content">
+                                <div class="project-overline">
+                                    Full Stack Project
+                                </div>
+                                <h3 class="project-title">
+                                    CLOSET FLOW: a cloth rental
+                                </h3>
+                                <div class="project-description">
+                                    <p>
+                                        Designed and developed a scalable
+                                        role-based fashion rental web
+                                        application using session-based
+                                        authentication and a clean MVC
+                                        architecture, enabling users to browse
+                                        and rent outfits while admins manage
+                                        listings and dashboards, with strong
+                                        emphasis on security, maintainability,
+                                        and future scalability.
+                                    </p>
+                                </div>
+                                <ul class="project-tech-list">
+                                    <li>Node.js</li>
+                                    <li>Express.js</li>
+                                    <li>EJS</li>
+                                    <li>MongoDB</li>
+                                    <li>Express Sessions</li>
+                                    <li>REST APIs</li>
+                                    <li>Tailwind CSS</li>
+                                    <li>Image-Kit</li>
+                                    <li>Rate Limiting</li>
+                                </ul>
+                                <div class="project-links">
+                                    <a
+                                        href="https://github.com/prabhatkumargupta00/ClosetFlow"
+                                        class="project-link"
+                                        aria-label="GitHub Link"
+                                        ><i class="fab fa-github"></i
+                                    ></a>
+                                    <a
+                                        href="https://closetflow-dxta.onrender.com/"
+                                        class="project-link"
+                                        aria-label="Live Demo Link"
+                                        ><i class="fas fa-external-link-alt"></i
+                                    ></a>
+                                </div>
+                            </div>
+                            <div class="project-image-wrapper">
+                                <div class="project-image closet-img">
+                                    <a
+                                        href="https://closetflow-dxta.onrender.com/"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                    >
+                                        <img
+                                            src="images/image_ClosetFlow.png"
+                                            alt="ClosetFlow Project"
+                                        />
+                                        <div class="image-overlay"></div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Project 2 -->
+
+                        <div class="project-card reverse reveal-up">
+                            <div class="project-content">
+                                <div class="project-overline">
+                                    Full Stack Project
+                                </div>
+                                <h3 class="project-title">
+                                    QuickLink: Modern URL Shortener
+                                </h3>
+                                <div class="project-description">
+                                    <p>
+                                        QuickLink is a fast URL shortener that
+                                        turns long links into short, shareable
+                                        ones. It also shows click analytics,
+                                        works well on all devices, and saves
+                                        recent links in your browser, built with
+                                        React, Express, and MongoDB.
+                                    </p>
+                                </div>
+                                <ul class="project-tech-list">
+                                    <li>React.js</li>
+                                    <li>Vite</li>
+                                    <li>Node.js</li>
+                                    <li>Express.js</li>
+                                    <li>MongoDB</li>
+                                    <li>Tailwind CSS</li>
+                                    <li>Nanoid</li>
+                                </ul>
+                                <div class="project-links">
+                                    <a
+                                        href="https://github.com/prabhatkumargupta00/Quick_link"
+                                        target="_blank"
+                                        class="project-link"
+                                        aria-label="GitHub Link"
+                                        ><i class="fab fa-github"></i
+                                    ></a>
+                                    <a
+                                        href="https://urlf.onrender.com/"
+                                        target="_blank"
+                                        class="project-link"
+                                        aria-label="Live Demo Link"
+                                        ><i class="fas fa-external-link-alt"></i
+                                    ></a>
+                                </div>
+                            </div>
+                            <div class="project-image-wrapper">
+                                <div class="project-image hotel-img">
+                                    <a
+                                        href="https://urlf.onrender.com/"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                    >
+                                        <img
+                                            src="images/image_URL.png"
+                                            alt="Quick_link "
+                                        />
+
+                                        <div class="image-overlay"></div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Project 3 -->
+                        <div class="project-card reveal-up">
+                            <div class="project-content">
+                                <div class="project-overline">
+                                    Frontend Project
+                                </div>
+                                <h3 class="project-title">
+                                    Coffee Shop Website
+                                </h3>
+                                <div class="project-description">
+                                    <p>
+                                        Developed a responsive website for a
+                                        fictional coffee shop called "Coffee
+                                        House". The website includes an
+                                        interactive menu, smooth navigation, and
+                                        a contact form designed to provide a
+                                        seamless experience across all devices.
+                                    </p>
+                                </div>
+                                <ul class="project-tech-list">
+                                    <li>HTML</li>
+                                    <li>CSS</li>
+                                    <li>JavaScript</li>
+                                    <li>Responsive Web Design</li>
+                                </ul>
+                                <div class="project-links">
+                                    <a
+                                        href="https://github.com/prabhatkumargupta00/coffee-house"
+                                        class="project-link"
+                                        aria-label="GitHub Link"
+                                        ><i class="fab fa-github"></i
+                                    ></a>
+                                    <a
+                                        href="https://prabhatkumargupta00.github.io/coffee-house/"
+                                        class="project-link"
+                                        aria-label="Live Demo Link"
+                                        ><i class="fas fa-external-link-alt"></i
+                                    ></a>
+                                </div>
+                            </div>
+                            <div class="project-image-wrapper">
+                                <div class="project-image coffee-img">
+                                    <a
+                                        href="https://prabhatkumargupta00.github.io/coffee-house/"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                    >
+                                        <img
+                                            src="images/imageCoffee.png"
+                                            alt="Coffee Shop Project"
+                                        />
+                                        <div class="image-overlay"></div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Contact Section -->
+            <section id="contact" class="contact section">
+                <div class="container">
+                    <div class="contact-wrapper reveal-up">
+                        <div class="section-title text-center">
+                            <h2>04. <span>Get In Touch</span></h2>
+                        </div>
+                        <p class="contact-text">
+                            Currently looking for new opportunities, my inbox is
+                            always open. Whether you have a question or just
+                            want to say hi, I'll try my best to get back to you!
+                        </p>
+
+                        <div class="contact-info">
+                            <div class="contact-item">
+                                <i class="fas fa-phone-alt"></i>
+                                <span>+91 7033742566</span>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fas fa-envelope"></i>
+                                <a href="mailto:pkumargupta9162@gmail.com"
+                                    >pkumargupta9162@gmail.com</a
+                                >
+                            </div>
+                            <div class="contact-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>Bhopal, MP, India</span>
+                            </div>
+                        </div>
+
+                        <a
+                            href="mailto:pkumargupta9162@gmail.com"
+                            class="btn btn-primary contact-btn"
+                            >Say Hello</a
+                        >
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer>
+            <div class="container footer-container">
+                <div class="footer-social">
+                    <a
+                        href="https://github.com/prabhatkumargupta00"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        ><i class="fab fa-github"></i
+                    ></a>
+                    <a
+                        href="https://www.linkedin.com/in/prabhat-kumar-gupta-365ba72a9"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        ><i class="fab fa-linkedin-in"></i
+                    ></a>
+                </div>
+                <p class="copyright">Designed & Built by Prabhat Kumar Gupta</p>
+                <p class="copyright-year">&copy; 2024 All Rights Reserved</p>
+            </div>
+        </footer>
+
+        <!-- Custom JavaScript -->
+        <script src="script.js"></script>
+    </body>
+</html>
