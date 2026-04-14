@@ -152,6 +152,23 @@ h4 {
     font-weight: 600;
 }
 
+.resume {
+    background-color: #004d40;
+    width: fit-content;
+    padding: 5px 10px;
+    position: fixed;
+    bottom: 10%;
+    right: 5%;
+    border-radius: 10px;
+    font-size: 1.3rem;
+    z-index: 200;
+}
+
+
+
+
+
+
 
 /* --- Reusables --- */
 .container {
@@ -646,65 +663,103 @@ h4 {
 /* --- Projects Section --- */
 .projects-grid {
     display: flex;
-    flex-direction: column;
-    gap: 100px;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
 }
 
 .project-card {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 50px;
-    align-items: center;
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 350px;
+    max-width: 400px;
+    background: var(--bg-card);
+    border-radius: 20px;
+    border: var(--border-glass);
+    overflow: hidden;
+    transition: var(--transition-normal);
+    backdrop-filter: blur(10px);
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+    border-color: var(--accent-red);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
 }
 
 .project-card.reverse {
-    direction: rtl;
+    flex-direction: column; /* keep consistent grid */
 }
 
-.project-card.reverse .project-content {
-    direction: ltr;
-    /* keep text normal */
+.project-content {
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+}
+
+.project-card.reverse .project-tech-list,
+.project-card.reverse .project-links {
+    justify-content: flex-start;
+}
+
+.project-image-wrapper {
+    width: 100%;
+    order: -1;
+    position: relative;
+    aspect-ratio: 16/10;
+    overflow: hidden;
 }
 
 .project-overline {
     color: var(--accent-purple);
     font-family: var(--font-heading);
-    font-weight: 600;
-    font-size: 0.9rem;
-    letter-spacing: 1px;
+    font-weight: 700;
+    font-size: 0.85rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
     margin-bottom: 10px;
 }
 
 .project-title {
-    font-size: 2rem;
-    margin-bottom: 20px;
+    font-size: 1.5rem;
+    font-weight: 800;
+    margin-bottom: 15px;
+    transition: var(--transition-normal);
 }
 
+/* .project-card:hover .project-title {
+    color: var(--accent-red);
+} */
+
 .project-description {
-    background: var(--bg-card);
-    padding: 25px;
-    border-radius: 15px;
-    border: var(--border-glass);
     color: var(--text-secondary);
-    backdrop-filter: blur(10px);
-    box-shadow: var(--glass-shadow);
     margin-bottom: 20px;
-    position: relative;
-    z-index: 2;
+    font-size: 0.95rem;
+    line-height: 1.6;
 }
 
 .project-card.reverse .project-description {
-    text-align: right;
+    text-align: left;
 }
+
+/* .project-card:hover .project-description {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4), 0 0 20px rgba(255, 51, 102, 0.1);
+} */
 
 .project-tech-list {
     display: flex;
     flex-wrap: wrap;
-    gap: 15px;
+    gap: 10px;
     margin-bottom: 20px;
     color: var(--text-primary);
     font-family: var(--font-heading);
-    font-size: 0.9rem;
+    font-size: 0.85rem;
+}
+.project-tech-list li{
+    background-color: var(--accent-orange);
+    padding: 2px 3px ;
+    border-radius: 5px;
 }
 
 .project-card.reverse .project-tech-list {
@@ -730,13 +785,10 @@ h4 {
     transform: translateY(-3px);
 }
 
-.project-image-wrapper {
-    position: relative;
-    border-radius: 15px;
-    overflow: hidden;
-    aspect-ratio: 16/10;
-    box-shadow: var(--glass-shadow);
-}
+/* .project-card:hover .project-image-wrapper {
+    transform: scale(1.01);
+    box-shadow: 0 30px 60px rgba(0, 0, 0, 0.5);
+} */
 
 .project-image {
     width: 100%;
@@ -745,8 +797,9 @@ h4 {
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: var(--transition-slow);
+    transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 
 .coffee-img {
     background: linear-gradient(135deg, #3e2723, #1a237e);
@@ -841,21 +894,23 @@ h4 {
 
 /* --- Footer --- */
 footer {
-    padding: 30px 0;
+    padding: 1% 0;
     text-align: center;
     border-top: var(--border-glass);
-    background: rgba(10, 15, 22, 0.5);
+    background: rgba(10, 15, 22, 0.1);
+    backdrop-filter: blur(10px);
 }
 
 .footer-social {
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: 10px;
     margin-bottom: 20px;
 }
 
 .footer-social a {
     color: var(--text-secondary);
+    gap: 5px;
     font-size: 1.5rem;
 }
 
@@ -933,9 +988,14 @@ footer {
         justify-content: center;
     }
 
-    .about-grid,
-    .project-card {
+    .about-grid {
         grid-template-columns: 1fr;
+    }
+
+    .project-card,
+    .project-card.reverse {
+        flex-direction: column;
+        gap: 30px;
     }
 
     .project-card.reverse .project-description,
