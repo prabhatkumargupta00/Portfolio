@@ -9,7 +9,7 @@ Responsive personal portfolio website built with vanilla HTML, CSS, and JavaScri
 </div>
 
 ## Live Project
-[![Visit Portfolio](https://img.shields.io/badge/VISIT_PORTFOLIO-0096DC?style=for-the-badge&logo=google-chrome&logoColor=white)](https://your-live-portfolio-link.com)
+[![Visit Portfolio](https://img.shields.io/badge/VISIT_PORTFOLIO-0096DC?style=for-the-badge&logo=google-chrome&logoColor=white)](https://prabhatkumargupta00.github.io/Portfolio/)
 
 
 ## Features
